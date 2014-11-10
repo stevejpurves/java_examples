@@ -39,16 +39,16 @@ public class LinkedListTest {
 
 	@Test
 	public void testSetup() {
-		Assert.assertEquals(new Integer(2), theList.get(1));
-		Assert.assertEquals(new Integer(18), theList.getLast());
+		Assert.assertEquals(2, theList.get(1).intValue());
+		Assert.assertEquals(18, theList.getLast().intValue());
 	}
 	
 	@Test
 	public void testInsert() {
 		insert(5);
-		Assert.assertEquals(new Integer(4), theList.get(2));
-		Assert.assertEquals(new Integer(5), theList.get(3));
-		Assert.assertEquals(new Integer(6), theList.get(4));
+		Assert.assertEquals(4, theList.get(2).intValue());
+		Assert.assertEquals(5, theList.get(3).intValue());
+		Assert.assertEquals(6, theList.get(4).intValue());
 	}
 
 }

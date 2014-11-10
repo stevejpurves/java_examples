@@ -54,4 +54,11 @@ public class Arrays {
 		Assert.assertEquals(18, sortedNumbers[9]);
 	}
 
+	@Test
+	public void testInsert() {
+		insert(5);
+		Assert.assertEquals(4, sortedNumbers[2]);
+		Assert.assertEquals(5, sortedNumbers[3]);
+		Assert.assertEquals(6, sortedNumbers[4]);
+	}
 }
